@@ -17,5 +17,5 @@ app.get("/", (req, res) => {
 app.use(bodyParser.json());
 app.use("/buah", buahRoute);
 app.listen(PORT, () =>
-    console.log('Server berjalan di port : http://localhost:8000')
+    console.log(`Server berjalan di port : http://localhost:${PORT}`)
 );
